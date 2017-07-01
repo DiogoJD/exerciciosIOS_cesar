@@ -71,7 +71,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("didSelectRow")
+        print("didSelectRow")//aqui é a ação da tela
+        performSegue(withIdentifier: "detailsSegue", sender: self)
+        
     }
 
 }
